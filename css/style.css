@@ -2,50 +2,63 @@
   outline: 1px solid red !important;
 }*/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-box-sizing: border-box;
 }
+
+/*.randomPizzaContainer{
+	
+	width :33.33%;
+   height : 325px;
+	
+	
+}*/
+
 
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background: black;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: black;
 }
-
 input {
-  background: grey;
-  font-size: 18px;
+	background: grey;
+	font-size: 18px;
 }
-
 form {
-  display: inline-block;
+	display: inline-block;
 }
-
 .centered {
-  text-align: center;
+	text-align: center;
 }
-
 #pizzaSize {
-  font-weight: 800;
+	font-weight: 800;
 }
-
 .mover {
-  position: fixed;
-  width: 256px;
-  z-index: -1;
-}
+	position: fixed;
+	width: 73.333px;
+	height: 100px;
+	z-index: -1;
 
+}
 .randomPizzaContainer {
-  float: left;
-  display: flex;
+	float: left;
+	display: flex;
+	height: 325px;
 }
-
 .randomPizzaContainer:after {
-  content: "";
-  display: table;
-  clear:both;
+	content: "";
+	display: table;
+	clear: both;
 }
-
- .container {
-  background-color: rgba(240, 60, 60, 0.8);
+.col-4{
+	width: calc(100% / 3);
+}
+.lesswidth {
+    width: 35%;
+}
+.maxwidth {
+    width: 65%;
+}
+.container {
+	background-color: rgba(240, 60, 60, 0.8);
 }
