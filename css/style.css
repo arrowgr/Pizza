@@ -6,7 +6,6 @@
 	-moz-box-sizing: border-box;
 	-box-sizing: border-box;
 }
-
 /*.randomPizzaContainer{
 	
 	width :33.33%;
@@ -38,7 +37,6 @@ form {
 	width: 73.333px;
 	height: 100px;
 	z-index: -1;
-
 }
 .randomPizzaContainer {
 	float: left;
@@ -50,14 +48,14 @@ form {
 	display: table;
 	clear: both;
 }
-.col-4{
+.col-4 {
 	width: calc(100% / 3);
 }
 .lesswidth {
-    width: 35%;
+	width: 35%;
 }
 .maxwidth {
-    width: 65%;
+	width: 65%;
 }
 .container {
 	background-color: rgba(240, 60, 60, 0.8);
