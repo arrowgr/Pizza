@@ -1,16 +1,19 @@
 Website hosting
-https://feedaki.gr/Pizza/pizza.html
+https://feedaki.gr/Pizza/index.html
 
+Local
+
+Open index.html in a browser
 
 Check with:
-PageSpeed Insights
+PageSpeed Insights 
 gtmetrix
+
 
 Photoshop
 https://kraken.io/web-interface
 
 change images size pizza.png and pizzeria.jpg save on web
-
 
 
 pizza.html
