@@ -546,8 +546,10 @@ function updatePositions() {
 		var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
 	//console.log(phase + ' ' +i); 
 	//	items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-		   var aristera = -items[i].basicLeft +100 * phase + 'px';
-        items[i].style.transform = "translateX("+aristera +") translateZ(0)";
+		//   var aristera = -items[i].basicLeft +100 * phase + 'px';
+      //  items[i].style.transform = "translateX("+aristera +") translateZ(0)";
+	//	 items[i].style.transform = 'translateX(' + 100 * phase + 'px)';
+		items[i].style.transform = 'translateX(' + 1000 * phase + 'px)';
 		
 		// console.log(items[i].style.transform= 'translateX('+items[i].basicLeft + 100 * phase + 'px'+')');
 	}
