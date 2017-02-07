@@ -485,12 +485,21 @@ var resizePizzas = function (size) {
 		    var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
 
 		// run before loop
+<<<<<<< HEAD
 	//	var dx3 = determineDx(document.querySelector(".randomPizzaContainer"), size);
 	//	var newwidth3 = (document.querySelector(".randomPizzaContainer").offsetWidth + dx3) +'px' ;
 
 for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
 		//	document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth3;
 	 		randomPizzas[i].style.width = (sizeSwitcher(size) * windowWidth) + 'px';
+=======
+		var dx3 = determineDx(document.querySelector(".randomPizzaContainer"), size);
+		var newwidth3 = (document.querySelector(".randomPizzaContainer").offsetWidth + dx3) +'px' ;
+		var fullmeter = document.querySelectorAll(".randomPizzaContainer");
+      // document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth3;
+for (var i = 0; i < fullmeter.length; i++) {
+			fullmeter[i].style.width = newwidth3;
+>>>>>>> origin/master
 		}
 	}
 
@@ -506,8 +515,12 @@ for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+<<<<<<< HEAD
 	var pizzasDiv = document.getElementById("randomPizzas");
 
+=======
+var pizzasDiv = document.getElementById("randomPizzas");
+>>>>>>> origin/master
 for (var i = 2; i < 100; i++) {
 	
 	pizzasDiv.appendChild(pizzaElementGenerator(i));
@@ -549,8 +562,8 @@ function updatePositions() {
 		var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
 	//console.log(phase + ' ' +i); 
 	//	items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-		    var left = -items[i].basicLeft + 1000 * phase + 'px';
-        items[i].style.transform = "translateX("+left+") translateZ(0)";
+		   var aristera = -items[i].basicLeft +100 * phase + 'px';
+        items[i].style.transform = "translateX("+aristera +") translateZ(0)";
 		
 		// console.log(items[i].style.transform= 'translateX('+items[i].basicLeft + 100 * phase + 'px'+')');
 	}
