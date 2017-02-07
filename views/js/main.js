@@ -474,7 +474,6 @@ var resizePizzas = function (size) {
 		var newSize = sizeSwitcher(size);
 		var dx = (newSize - oldSize) * windowWidth;
 		
-		// var windowWidth = document.getElementById("randomPizzas").offsetWidth;
 			
 
 		return dx;
@@ -482,24 +481,14 @@ var resizePizzas = function (size) {
 
 	// Iterates through pizza elements on the page and changes their widths
 	function changePizzaSizes(size) {
-		    var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
-
+		
 		// run before loop
-<<<<<<< HEAD
-	//	var dx3 = determineDx(document.querySelector(".randomPizzaContainer"), size);
-	//	var newwidth3 = (document.querySelector(".randomPizzaContainer").offsetWidth + dx3) +'px' ;
-
-for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-		//	document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth3;
-	 		randomPizzas[i].style.width = (sizeSwitcher(size) * windowWidth) + 'px';
-=======
 		var dx3 = determineDx(document.querySelector(".randomPizzaContainer"), size);
 		var newwidth3 = (document.querySelector(".randomPizzaContainer").offsetWidth + dx3) +'px' ;
 		var fullmeter = document.querySelectorAll(".randomPizzaContainer");
       // document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth3;
 for (var i = 0; i < fullmeter.length; i++) {
 			fullmeter[i].style.width = newwidth3;
->>>>>>> origin/master
 		}
 	}
 
@@ -515,12 +504,7 @@ for (var i = 0; i < fullmeter.length; i++) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
-<<<<<<< HEAD
-	var pizzasDiv = document.getElementById("randomPizzas");
-
-=======
 var pizzasDiv = document.getElementById("randomPizzas");
->>>>>>> origin/master
 for (var i = 2; i < 100; i++) {
 	
 	pizzasDiv.appendChild(pizzaElementGenerator(i));
@@ -591,7 +575,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		elem.className = 'mover';
 		elem.src = "images/pizza.svg";
 		elem.basicLeft = (i % cols) * s;
-	    //var dose = (Math.floor(i / cols) * s) + 'px' ;
+	    var dose = (Math.floor(i / cols) * s) + 'px' ;
 		 // elem.style.transform= 'translateY('+dose+')';
 	   elem.style.top = (Math.floor(i / cols) * s) + 'px';
   
