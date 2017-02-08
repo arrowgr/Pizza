@@ -436,13 +436,13 @@ var resizePizzas = function (size) {
 	function changeSliderLabel(size) {
 		switch (size) {
 			case "1":
-				document.querySelector("#pizzaSize").innerHTML = "Small";
+				document.getElementById("pizzaSize").innerHTML = "Small";
 				return;
 			case "2":
-				document.querySelector("#pizzaSize").innerHTML = "Medium";
+				document.getElementById("pizzaSize").innerHTML = "Medium";
 				return;
 			case "3":
-				document.querySelector("#pizzaSize").innerHTML = "Large";
+				document.getElementById("pizzaSize").innerHTML = "Large";
 				return;
 			default:
 				console.log("bug in changeSliderLabel");
@@ -540,16 +540,18 @@ function updatePositions() {
 
 	// var items = document.querySelectorAll('.mover');
 	var items = document.getElementsByClassName('mover');
-
+	var top = (document.body.scrollTop / 1250);
+	
 	for (var i = 0; i < items.length; i++) {
 		
-		var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+		var phase = Math.sin( top + (i % 5));
+		
 	//console.log(phase + ' ' +i); 
 	//	items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
 		//   var aristera = -items[i].basicLeft +100 * phase + 'px';
       //  items[i].style.transform = "translateX("+aristera +") translateZ(0)";
 	//	 items[i].style.transform = 'translateX(' + 100 * phase + 'px)';
-		items[i].style.transform = 'translateX(' + 1000 * phase + 'px)';
+		items[i].style.transform = 'translateX(' + 400 * phase + 'px)';
 		
 		// console.log(items[i].style.transform= 'translateX('+items[i].basicLeft + 100 * phase + 'px'+')');
 	}
@@ -583,7 +585,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	   elem.style.top = (Math.floor(i / cols) * s) + 'px';
   
 	
-		document.querySelector("#movingPizzas1").appendChild(elem);
+		document.getElementById("movingPizzas1").appendChild(elem);
 	}
 	updatePositions();
 });

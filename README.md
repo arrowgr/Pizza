@@ -10,13 +10,17 @@ PageSpeed Insights
 gtmetrix
 
 
-Photoshop
-https://kraken.io/web-interface
+Optomize Images with http://optimizilla.com/
 
-change images size pizza.png and pizzeria.jpg save on web
+index.html
+add size on images
+minify html with http://www.willpeavy.com/minifier/
+
 
 
 pizza.html
+
+minify html with http://www.willpeavy.com/minifier/
 
 remove  
 </html>
@@ -29,6 +33,8 @@ add
 <div class="maxwidth">
 
 
+
+
 style.css
 add
 .randomPizzaContainer
@@ -38,7 +44,7 @@ add
 main.js
 
 add
- pizzaDescriptionContainer.className("max-width");
+pizzaDescriptionContainer.className("max-width");
 pizzaImageContainer.className("less-width");
 
 edit 
@@ -46,6 +52,9 @@ var rows = Math.ceil(window.innerHeight /256) * 8;
 function changePizzaSizes(size) {
 var left = -items[i].basicLeft + 1000 * phase + 'px';
 items[i].style.transform = "translateX("+left+") translateZ(0)";
+change querySelector  with getElementById on movingPizzas1,pizzaSize
+
+out of loop var top = (document.body.scrollTop / 1250);
 
 
 remove
