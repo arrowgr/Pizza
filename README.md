@@ -50,8 +50,11 @@ pizzaImageContainer.className("less-width");
 edit 
 var rows = Math.ceil(window.innerHeight /256) * 8;
 function changePizzaSizes(size) {
-var left = -items[i].basicLeft + 1000 * phase + 'px';
-items[i].style.transform = "translateX("+left+") translateZ(0)";
+
+
+document.addEventListener('DOMContentLoaded', function () {
+var dose = (Math.floor(i / cols) * s) + 'px' ;
+elem.style.transform= 'translateY('+dose+')';
 change querySelector  with getElementById on movingPizzas1,pizzaSize
 
 out of loop var top = (document.body.scrollTop / 1250);
